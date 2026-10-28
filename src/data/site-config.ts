@@ -5,7 +5,7 @@ export const siteConfig = {
   tagline: "One Bot. Infinite Possibilities.",
   // Keep this aligned with the actual bot prefix before publishing the command catalogue.
   prefix: "&",
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://bxaxtreme.github.io/Shizuka-Web-Fontend/",
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "https://bxaxtreme.github.io/Shizuka-Web-Frontend-/",
   logo: `${basePath}/logo.jpg`,
   inviteUrl: "",
   supportUrl: "",

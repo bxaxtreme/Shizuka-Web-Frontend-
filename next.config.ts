@@ -5,7 +5,7 @@ const basePath = isGitHubPages ? "/Shizuka-Web-Frontend-" : "";
 
 const nextConfig: NextConfig = {
   ...(isGitHubPages ? { output: "export" as const } : {}),
-  trailingSlash: true,
+  ...(isGitHubPages ? { trailingSlash: true } : {}),
   poweredByHeader: false,
   basePath,
   images: { unoptimized: true },
