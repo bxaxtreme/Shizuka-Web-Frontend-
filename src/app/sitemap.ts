@@ -9,6 +9,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "features/", changeFrequency: "monthly" as const, priority: 0.7 },
     { path: "premium/", changeFrequency: "monthly" as const, priority: 0.7 },
     { path: "dashboard/", changeFrequency: "monthly" as const, priority: 0.7 },
+    { path: "terms/", changeFrequency: "yearly" as const, priority: 0.3 },
+    { path: "privacy/", changeFrequency: "yearly" as const, priority: 0.3 },
   ];
   return pages.map((page) => ({
     url: new URL(page.path, base).toString(),

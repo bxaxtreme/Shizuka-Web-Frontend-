@@ -39,7 +39,7 @@ npm run build
 
 ## Public links and branding
 
-Edit `src/data/site-config.ts`. Invite and support URLs intentionally remain blank until verified. Set `NEXT_PUBLIC_SITE_URL` to the final public website origin when deploying to Vercel or a custom domain. The GitHub Pages URL is the fallback. Keep `NEXT_PUBLIC_BASE_PATH` and `GITHUB_PAGES` unset on Vercel. Invite and support links are blank until you add verified public URLs.
+Edit `src/data/site-config.ts`. Invite and support URLs intentionally remain blank until verified. Set `NEXT_PUBLIC_SITE_URL` to the final public website origin when deploying to Vercel or a custom domain. Set the production Vercel URL before launch; the existing fallback is retained only for backward compatibility. Keep `NEXT_PUBLIC_BASE_PATH` and `GITHUB_PAGES` unset on Vercel. Invite and support links are blank until you add verified public URLs.
 
 ## Command catalogue and honest preview data
 
@@ -56,3 +56,7 @@ No backend, authentication, API, database, payment processing, bot token, or pri
 5. Keep GitHub Pages static-export settings limited to the GitHub Actions workflow.
 
 The website is a frontend preview; dashboard statistics, music playback, invite and support actions require real configured destinations/data sources.
+
+
+## Zero-configuration hosting
+The public website and API shell can be deployed to Vercel without adding API keys or environment variables. Live Discord statistics, bot event ingestion, MongoDB persistence, and Discord OAuth sign-in will remain disabled until their optional integrations are configured. No fake live metrics are displayed. See `README-VERCEL.md` for details. Vercel does not host a persistent Discord gateway or Lavalink process.
