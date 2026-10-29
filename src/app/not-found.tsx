@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ArrowLeft, Sparkles } from "lucide-react";
 
 /** Keep this route server-renderable: no event handlers or dynamic href props. */
@@ -8,7 +9,7 @@ export default function NotFound() {
       <span className="eyebrow">404 · LOST IN THE CLOUDS</span>
       <h1>This page took<br /><span>a little detour.</span></h1>
       <p>Looks like the page you’re looking for isn’t here.</p>
-      <a href="/" className="button button-pink"><ArrowLeft size={16} aria-hidden="true" /> Back home</a>
+      <Link href="/" className="button button-pink"><ArrowLeft size={16} aria-hidden="true" /> Back home</Link>
     </section>
   );
 }
